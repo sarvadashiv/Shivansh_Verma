@@ -1,6 +1,6 @@
 # Probation-Projects-2024
 
-Welcome to Team Conatus Probation Projects for 2024!
+Jai hind and welcome to Team Conatus Probation Projects for 2024!👋✨
 
 ## How to add your project to this repository?
 
@@ -35,3 +35,5 @@ Welcome to Team Conatus Probation Projects for 2024!
 8. Go to Github and create a Pull Request for the same
 
 The reviewers will be notified of the pull request and after reviewing will merge the pull request into the main branch.
+
+Best of luck for all the tasks ahead!👍✌️
