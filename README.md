@@ -1,4 +1,4 @@
-# Probation-Projects-2024
+# Probation Projects'24
 
 Jai hind and welcome to Team Conatus Probation Projects for 2024!👋✨
 
