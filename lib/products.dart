@@ -25,7 +25,7 @@ List<Product> products = [
       title: 'Oversized t-shirt',
       size: 32,
       color: Colors.black,
-      image: 'assets / images / oversized.png',
+      image: 'assets/images/oversized.png',
       price: 699,
       description: 'Modern Oversized t-shirt'),
   Product(
@@ -33,7 +33,7 @@ List<Product> products = [
       title: 'Football boots',
       size: 9,
       color: Colors.white,
-      image: 'assets / images / nike.png',
+      image: 'assets/images/nike.png',
       price: 4999,
       description: 'White football boots'),
   Product(
@@ -41,7 +41,7 @@ List<Product> products = [
       title: 'Real Madrid jersey',
       size: 32,
       color: Colors.white,
-      image: 'assets / images / jersey.png',
+      image: 'assets/images/jersey.png',
       price: 2999,
       description: 'A white Real Madrid jersey'),
   Product(
@@ -49,7 +49,7 @@ List<Product> products = [
       title: 'Green Shirt',
       size: 34,
       color: const Color.fromARGB(255, 59, 149, 62),
-      image: 'assets / images / shirt.png',
+      image: 'assets/images/shirt.png',
       price: 699,
       description: 'Green and yellow check shirt'),
   Product(
@@ -57,7 +57,7 @@ List<Product> products = [
       title: 'Whey Protien',
       color: Colors.grey,
       size: 500,
-      image: 'assets / images / protien.png',
+      image: 'assets/images/protien.png',
       price: 1999,
       description: 'A perfect muscelBlaze mass gainer for bulking'),
   Product(
@@ -65,7 +65,7 @@ List<Product> products = [
       title: 'Victus skin',
       size: 16,
       color: const Color.fromARGB(255, 103, 37, 32),
-      image: 'assets / images / victusSkin.png',
+      image: 'assets/images/victusSkin.png',
       price: 499,
       description: 'Maroon skin for victus 16 inch laptop'),
 ];

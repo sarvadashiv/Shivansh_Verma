@@ -49,7 +49,7 @@ class MyHomePage extends StatelessWidget {
               child: Column(
                 children: [
                   Expanded(
-                    child: Image.network(
+                    child: Image.asset(
                       products[index].image,
                       fit: BoxFit.cover, // Adjust the image to cover the space
                     ),
