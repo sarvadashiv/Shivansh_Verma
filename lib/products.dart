@@ -22,7 +22,7 @@ class Product extends StatelessWidget {
 List<Product> products = [
   Product(
       id: 1,
-      title: 'Oversized Black and red t-shirt',
+      title: 'Oversized t-shirt',
       size: 32,
       color: Colors.black,
       image: 'assets / images / oversized.png',
@@ -30,7 +30,7 @@ List<Product> products = [
       description: 'Modern Oversized t-shirt'),
   Product(
       id: 2,
-      title: 'Nike footbal boots',
+      title: 'Football boots',
       size: 9,
       color: Colors.white,
       image: 'assets / images / nike.png',
@@ -38,7 +38,7 @@ List<Product> products = [
       description: 'White football boots'),
   Product(
       id: 3,
-      title: 'Real Madrid jersey by Nike',
+      title: 'Real Madrid jersey',
       size: 32,
       color: Colors.white,
       image: 'assets / images / jersey.png',
@@ -46,7 +46,7 @@ List<Product> products = [
       description: 'A white Real Madrid jersey'),
   Product(
       id: 4,
-      title: 'Green Check Shirt',
+      title: 'Green Shirt',
       size: 34,
       color: const Color.fromARGB(255, 59, 149, 62),
       image: 'assets / images / shirt.png',
