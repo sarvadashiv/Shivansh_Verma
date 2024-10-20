@@ -49,7 +49,7 @@ List<Product> products = [
       id: 4,
       title: 'Green Shirt',
       size: 34,
-      color: Color.fromARGB(255, 51, 108, 53),
+      color: Color.fromARGB(255, 57, 92, 59),
       image: 'assets/images/shirt.png',
       price: 699,
       description: 'Green and yellow check shirt'),
