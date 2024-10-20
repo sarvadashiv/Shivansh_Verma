@@ -16,7 +16,7 @@ class ProductTitleWithImage extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 20),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: <Widget>[Text("The Finisher", style: TextStyle(color: Colors.white)
+        children: <Widget>[Text("", style: TextStyle(color: Colors.white)
         ),
         Text(product.title, style: Theme.of(context).textTheme.headlineMedium!.copyWith(color: Colors.white,fontWeight: FontWeight.bold)
         ),
