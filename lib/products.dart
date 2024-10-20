@@ -4,7 +4,8 @@ class Product extends StatelessWidget {
   final String image, title, description;
   final int size, price, id;
   final Color color;
-  Product({
+  const Product({
+    super.key,
     required this.image,
     required this.title,
     required this.description,
@@ -20,7 +21,7 @@ class Product extends StatelessWidget {
 }
 
 List<Product> products = [
-  Product(
+  const Product(
       id: 1,
       title: 'Oversized t-shirt',
       size: 32,
@@ -28,7 +29,7 @@ List<Product> products = [
       image: 'assets/images/oversized.png',
       price: 699,
       description: 'Modern Oversized t-shirt'),
-  Product(
+  const Product(
       id: 2,
       title: 'Football boots',
       size: 9,
@@ -36,7 +37,7 @@ List<Product> products = [
       image: 'assets/images/nike.png',
       price: 4999,
       description: 'White football boots'),
-  Product(
+  const Product(
       id: 3,
       title: 'Real Madrid jersey',
       size: 32,
@@ -44,15 +45,15 @@ List<Product> products = [
       image: 'assets/images/jersey.png',
       price: 2999,
       description: 'A white Real Madrid jersey'),
-  Product(
+  const Product(
       id: 4,
       title: 'Green Shirt',
       size: 34,
-      color: const Color.fromARGB(255, 59, 149, 62),
+      color: Color.fromARGB(255, 59, 149, 62),
       image: 'assets/images/shirt.png',
       price: 699,
       description: 'Green and yellow check shirt'),
-  Product(
+  const Product(
       id: 5,
       title: 'Whey Protien',
       color: Colors.grey,
@@ -60,11 +61,11 @@ List<Product> products = [
       image: 'assets/images/protien.png',
       price: 1999,
       description: 'A perfect muscelBlaze mass gainer for bulking'),
-  Product(
+  const Product(
       id: 6,
       title: 'Victus skin',
       size: 16,
-      color: const Color.fromARGB(255, 103, 37, 32),
+      color: Color.fromARGB(255, 103, 37, 32),
       image: 'assets/images/victusSkin.png',
       price: 499,
       description: 'Maroon skin for victus 16 inch laptop'),
