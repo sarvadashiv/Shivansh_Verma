@@ -1,6 +1,5 @@
 import 'package:classico/tiles.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 void main() {
   runApp(const MyApp());
@@ -35,8 +34,9 @@ class MyHomePage extends StatelessWidget {
         title: const Center(
           child: Text("Brush and Buy", style: TextStyle(color: Colors.white)),
         ),
+        iconTheme: IconThemeData(color: Colors.white),
         leading: IconButton(
-          icon: SvgPicture.asset('assets/icons/cart.svg', color: Colors.white),
+          icon: Icon(Icons.shopping_cart),
           onPressed: () {},
           //add your cart nav
         ));
