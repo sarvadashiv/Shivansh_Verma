@@ -1,3 +1,5 @@
+import 'package:classico/color_and_size.dart';
+import 'package:classico/description.dart';
 import 'package:classico/product_title_with_image.dart';
 import 'package:classico/products.dart';
 import 'package:flutter/material.dart';
@@ -29,29 +31,9 @@ class Body extends StatelessWidget {
                   ),
                   child: Column(
                     children: <Widget>[
-                      Row(
-                        children: <Widget>[
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: <Widget>[Text("Colors"),
-                            Row(
-                              children: <Widget>[
-                                ColorDot(color: Colors.black,isSelected: true,),
-                                ColorDot(color: Colors.cyan),
-                                ColorDot(color: Colors.green)
-                              ]
-                          )],
-                          ),
-                          RichText(text: TextSpan(
-                            style: TextStyle(color: Colors.black),
-                            children: [
-                              TextSpan(text: 'Size\n'
-                              ),
-                              TextSpan(text: "${product.size} cm",style: Theme.of(context).textTheme.headlineMedium!.copyWith(fontWeight: FontWeight.bold))
-                            ]
-                          ))
-                        ],
-                      )
+                      ColorAndSize(product: product),
+                      Description(product: product),
+                      CartCounter()
                     ],
                   ),
                 ),
@@ -65,25 +47,42 @@ class Body extends StatelessWidget {
   }
 }
 
-class ColorDot extends StatelessWidget {
-  final Color color;
-  final bool isSelected;
-  const ColorDot({
-    super.key, required this.color, this.isSelected=false,
-  });
+class CartCounter extends StatefulWidget {
+  const CartCounter({super.key});
 
   @override
+  State<CartCounter> createState() => _CartCounterState();
+}
+
+class _CartCounterState extends State<CartCounter> {
+  int noOfItems=1;
+  @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: EdgeInsets.only(top: 5, right: 10),
-      padding: EdgeInsets.all(2.5),
-      height: 24,
-      width: 24,
-      decoration: BoxDecoration(
-          shape: BoxShape.circle, border: Border.all(color:isSelected? color:Colors.transparent)),
-      child: DecoratedBox(
-          decoration:
-              BoxDecoration(color: color, shape: BoxShape.circle)),
+    return Row(
+      children: <Widget>[
+        buildOutlineButton(
+          icon: Icons.remove,
+          press: (){}
+        ),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 10),
+          child: Text("01", style: Theme.of(context).textTheme.headlineMedium,),
+        ),
+        buildOutlineButton(icon: Icons.add, press: (){})
+      ],
     );
+  }
+
+  SizedBox buildOutlineButton({required IconData icon, required void Function() press}) {
+    return SizedBox(
+        width: 40,
+        height: 36,
+        child: OutlinedButton(
+          style: OutlinedButton.styleFrom(
+            padding: EdgeInsets.zero,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(13))),
+          onPressed: press, child: Icon(icon)),
+      );
   }
 }

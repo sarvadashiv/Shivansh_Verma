@@ -27,7 +27,7 @@ class ProductTitleWithImage extends StatelessWidget {
               text: TextSpan(
                 children:[
                   TextSpan(text: "Price\n"),
-                  TextSpan(text: "\$${product.price}", style: Theme.of(context).textTheme.headlineMedium!.copyWith(color: Colors.white,fontWeight: FontWeight.bold))
+                  TextSpan(text: "₹${product.price}", style: Theme.of(context).textTheme.headlineMedium!.copyWith(color: Colors.white,fontWeight: FontWeight.bold))
                 ],
               )),
               SizedBox(width: 50,),

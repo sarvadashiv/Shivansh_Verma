@@ -28,7 +28,7 @@ List<Product> products = [
       color: Colors.black,
       image: 'assets/images/oversized.png',
       price: 699,
-      description: 'Modern Oversized t-shirt'),
+      description: 'Modern Oversized t-shirt with finisher logo.'),
   const Product(
       id: 2,
       title: 'Football boots',
@@ -36,7 +36,7 @@ List<Product> products = [
       color: Colors.grey,
       image: 'assets/images/nike.png',
       price: 4999,
-      description: 'White football boots'),
+      description: 'White football boots by Nike'),
   const Product(
       id: 3,
       title: 'Real Madrid jersey',
@@ -44,7 +44,7 @@ List<Product> products = [
       color: Colors.grey,
       image: 'assets/images/jersey.png',
       price: 2999,
-      description: 'A white Real Madrid jersey'),
+      description: 'A white Real Madrid jersey by Nike'),
   const Product(
       id: 4,
       title: 'Green Shirt',
