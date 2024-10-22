@@ -1,4 +1,5 @@
 import 'package:classico/color_and_size.dart';
+import 'package:classico/counter_with_fav.dart';
 import 'package:classico/description.dart';
 import 'package:classico/product_title_with_image.dart';
 import 'package:classico/products.dart';
@@ -33,7 +34,12 @@ class Body extends StatelessWidget {
                     children: <Widget>[
                       ColorAndSize(product: product),
                       Description(product: product),
-                      CartCounter()
+                      CounterWithFav(),
+                      Row(
+                        children: <Widget>[
+                          SizedBox()
+                        ],
+                      )
                     ],
                   ),
                 ),
@@ -44,45 +50,5 @@ class Body extends StatelessWidget {
         ],
       ),
     );
-  }
-}
-
-class CartCounter extends StatefulWidget {
-  const CartCounter({super.key});
-
-  @override
-  State<CartCounter> createState() => _CartCounterState();
-}
-
-class _CartCounterState extends State<CartCounter> {
-  int noOfItems=1;
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      children: <Widget>[
-        buildOutlineButton(
-          icon: Icons.remove,
-          press: (){}
-        ),
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 10),
-          child: Text("01", style: Theme.of(context).textTheme.headlineMedium,),
-        ),
-        buildOutlineButton(icon: Icons.add, press: (){})
-      ],
-    );
-  }
-
-  SizedBox buildOutlineButton({required IconData icon, required void Function() press}) {
-    return SizedBox(
-        width: 40,
-        height: 36,
-        child: OutlinedButton(
-          style: OutlinedButton.styleFrom(
-            padding: EdgeInsets.zero,
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(13))),
-          onPressed: press, child: Icon(icon)),
-      );
   }
 }
