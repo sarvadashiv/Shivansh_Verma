@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "253242914319",
+    "project_id": "todoapp-50cc0",
+    "storage_bucket": "todoapp-50cc0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:253242914319:android:9b678d78af06bdb48cd57a",
+        "android_client_info": {
+          "package_name": "com.example.shivansh_verma2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCP15NLvrF7tNsVOagx3zfMzvNhIxSjczg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
