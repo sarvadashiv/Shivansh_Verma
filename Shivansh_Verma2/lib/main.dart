@@ -1,5 +1,7 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
+import 'package:shivansh_verma2/home_screen.dart';
 import 'package:shivansh_verma2/login_screen.dart';
 import 'package:flutter/widgets.dart';
 import 'package:shivansh_verma2/firebase_options.dart';
@@ -13,11 +15,11 @@ void main() async{
     options: DefaultFirebaseOptions.currentPlatform,
 );
   
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget  {
-  const MyApp({super.key});
+  final FirebaseAuth _auth = FirebaseAuth.instance;
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +30,7 @@ class MyApp extends StatelessWidget  {
         primarySwatch: Colors.indigo,
         primaryColor: Colors.indigo,
       ),
-      home: SignupScreen(),
+      home: _auth.currentUser!= null ? HomeScreen(): LoginScreen(),
     );
   }
 }

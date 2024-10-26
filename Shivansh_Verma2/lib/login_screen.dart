@@ -57,7 +57,7 @@ class LoginScreen extends StatelessWidget {
                 ),
                 SizedBox(height: 20),
                 TextField(
-                  controller: _emailController,
+                  controller: _passController,
                   style: TextStyle(color: Colors.white),
                   obscureText: true,
                   decoration: InputDecoration(
@@ -85,7 +85,7 @@ class LoginScreen extends StatelessWidget {
                         Navigator.push(context, MaterialPageRoute(builder: (context)=> HomeScreen()));
                       }
                     }, child: Text(
-                        'Register',style: TextStyle(
+                        'Log In',style: TextStyle(
                         color: Colors.indigo,fontSize: 18)
                     )
                     )
